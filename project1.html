@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Journal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Journal</h1>
+    </header>
+    <main>
+        <form id="journalForm">
+            <label for="entryTitle">Title:</label>
+            <input type="text" id="entryTitle" name="entryTitle" required>
+            
+            <label for="entryContent">Content:</label>
+            <textarea id="entryContent" name="entryContent" required></textarea>
+            
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+            
+            <label for="reminder">Reminder:</label>
+            <input type="datetime-local" id="reminder" name="reminder">
+            
+            <input type="submit" value="Save">
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
